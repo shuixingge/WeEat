@@ -38,8 +38,10 @@ Screenshot
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/13.jpg" width = "280" height = "460"/>
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/14.jpg" width = "280" height = "460"/>
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/15.jpg" width = "280" height = "460"/>
-<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/16.jpg.jpg" width = "280" height = "460"/>
+<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/16.jpg" width = "280" height = "460"/>
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/17.jpg" width = "280" height = "460"/>
+<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/18.jpg" width = "280" height = "460"/>
+<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/19.jpg" width = "280" height = "460"/>
 
 Dependencies
 ------
