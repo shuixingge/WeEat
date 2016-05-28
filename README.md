@@ -6,13 +6,20 @@ WeEat
 
 Update
 -------
-2016-5-13
+2016-5-23
 
 1 将项目重构为**MVP**架构模式；
 
 2 采用**RxJava**进行异步操作；
 
 3 采用**Retrofit**作为网络库
+
+2016-5-28
+
+1 加入动态加载技术，实现皮肤切换；
+
+2 整合聚合数据，加入搜索菜谱功能；
+
 
 Screenshot
 ------
@@ -30,6 +37,9 @@ Screenshot
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/12.jpg" width = "280" height = "460"/>
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/13.jpg" width = "280" height = "460"/>
 <img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/14.jpg" width = "280" height = "460"/>
+<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/15.jpg" width = "280" height = "460"/>
+<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/16.jpg.jpg" width = "280" height = "460"/>
+<img src="https://raw.githubusercontent.com/shuixingge/WeEat/master/ScreenShot/17.jpg" width = "280" height = "460"/>
 
 Dependencies
 ------
