@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single" />
+    <item
+        android:id="@+id/nav_item_home"
+        android:icon="@drawable/ic_drawer_home"
+        android:title="@string/drawer_home" />
+    <item
+        android:id="@+id/nav_item_search"
+        android:icon="@drawable/ic_drawer_search"
+        android:title="@string/drawer_search" />
+    <item
+        android:id="@+id/nav_item_square"
+        android:icon="@drawable/ic_drawer_square"
+        android:title="@string/drawer_square" />
+    <item
+        android:id="@+id/nav_item_person"
+        android:icon="@drawable/ic_drawer_person"
+        android:title="@string/drawer_person" />
+    <item
+        android:id="@+id/nav_item_heath"
+        android:icon="@drawable/ic_drawer_heath"
+        android:title="@string/drawer_heath" />
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/menu_change_theme"
+            android:title="@string/change_theme" />
+    </group>
+</menu>

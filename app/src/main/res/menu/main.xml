@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bupt.weeat.MainActivity">
+    <item
+        android:id="@+id/actionbar_take_picture"
+        android:icon="@drawable/actionbar_take_picture"
+        android:title="@string/app_name"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="select_dark_red">#f44336</color>
+    <color name="unselect_light_red">#ffebee</color>
+    <color name="btn_normal">#00000002</color>
+    <color name="light_red">#ef9a9a</color>
+    <color name="light_gray">#e0e0e0</color>
+    <color name="light_grey">#757575</color>
+    <color name="btn_pressed">#40ffffff</color>
+
+    <color name="primary_night">#1A1A1B</color>
+    <color name="primary_dark_night">#1E1F21</color>
+    <color name="night_grey">#AAAABB</color>
+    <color name="night_accent">#AAAAAA</color>
+    <color name="style_color_primary">#2d5d82</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+
+
+    <color name="colorPrimary">#ef5350</color>
+    <color name="colorPrimaryDark">#f44336</color>
+    <color name="colorAccent">#ec407a</color>
+    <color name="windowBackground">#bdbdbd</color>
+
+</resources>

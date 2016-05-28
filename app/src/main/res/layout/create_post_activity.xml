@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+
+    <EditText
+        android:id="@+id/comment_content_et"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="top"
+        android:hint="@string/food_comment_hint" />
+
+    <include
+        android:id="@+id/post_image_list"
+        layout="@layout/post_image_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/newpro_total_commit_background"
+            android:drawableStart="@drawable/take_picture"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/take_picture_hint"
+            android:textColor="@color/light_grey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/select_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/take_picture"
+            android:background="@drawable/newpro_total_commit_background"
+            android:drawableStart="@drawable/select_picture"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/select_picture_hint"
+            android:textColor="@color/light_grey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

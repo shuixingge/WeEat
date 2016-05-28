@@ -1,0 +1,14 @@
+package com.bupt.weeat.view.mvpView;
+
+import com.bupt.weeat.model.entity.Post;
+
+import java.util.List;
+
+/**
+ * Created by zhaoruolei1992 on 2016/5/23.
+ */
+public interface SquarePostListView extends MvpView  {
+    void refresh(List<Post> posts);
+    void loadMore(List<Post> posts);
+    void showError(String msg);
+}

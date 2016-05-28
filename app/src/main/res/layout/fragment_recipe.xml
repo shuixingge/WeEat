@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recipe_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bupt.weeat.view.customView.SwipeLoadRefreshLayout
+        android:id="@+id/recipe_refresh_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipe_activity_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.bupt.weeat.view.customView.SwipeLoadRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="?actionBarSize"
+        android:src="@drawable/ic_fab_search"
+        app:borderWidth="2dp"
+        app:elevation="6dp"
+        app:layout_anchor="@+id/recipe_activity_recycler"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="com.bupt.weeat.view.customView.ScrollAwareFABBehavior"
+        app:pressedTranslationZ="12dp" />
+</android.support.design.widget.CoordinatorLayout>

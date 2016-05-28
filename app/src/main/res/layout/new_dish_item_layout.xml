@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="8dp"
+    card_view:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/new_dish_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/loading_placeholer"
+            />
+
+        <RelativeLayout
+            android:id="@+id/new_dish_name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@id/new_dish_image">
+
+            <TextView
+                android:id="@+id/new_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/newpro_food_name1"
+                android:textColor="@color/light_grey" />
+
+            <TextView
+                android:id="@+id/new_dish_price"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/new_dish_name"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="8"
+                android:textColor="@color/light_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_dish_name_layout"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/new_dish_image">
+
+            <TextView
+                android:id="@+id/new_dish_location"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="end"
+                android:padding="5dp"
+                android:text="@string/newpro_food_location1"
+                android:textColor="@color/light_grey" />
+
+            <TextView
+                android:id="@+id/new_dish_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/new_dish_location"
+                android:text="2015-06-13"
+                android:textColor="@color/light_grey" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/new_production_select_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/select_detail" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

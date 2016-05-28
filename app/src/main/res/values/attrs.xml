@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textLight" format="reference" />
+    <attr name="textNight" format="reference" />
+    <attr name="appBackground" format="reference" />
+    <attr name="borderRadius" format="dimension" />
+
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <declare-styleable name="MaterialLayout">
+        <attr name="alpha" format="integer" />
+        <attr name="alpha_step" format="integer" />
+        <attr name="frame_rate" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="reveal_color" format="color" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawer_image_array">
+        <item>@drawable/ic_drawer_home</item>
+        <item>@drawable/ic_drawer_search</item>
+        <item>@drawable/ic_drawer_square</item>
+        <item>@drawable/ic_drawer_person</item>
+        <item>@drawable/ic_drawer_about</item>
+    </array>
+    <string-array name="drawer_text_array">
+        <item >@string/drawer_home</item>
+        <item >@string/drawer_search</item>
+        <item >@string/drawer_square</item>
+        <item >@string/drawer_person</item>
+        <item >@string/drawer_heath</item>
+    </string-array>
+    <string-array name="newpro_food_location">
+        <item>@string/newpro_food_location1</item>
+        <item>@string/newpro_food_location2</item>
+    </string-array>
+    <string-array name="newpro_food_name">
+        <item>@string/newpro_food_name1</item>
+        <item>@string/newpro_food_name2</item>
+    </string-array>
+</resources>
