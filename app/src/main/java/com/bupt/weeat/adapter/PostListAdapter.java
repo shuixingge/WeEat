@@ -14,8 +14,9 @@ import android.widget.TextView;
 import com.bupt.weeat.R;
 import com.bupt.weeat.model.entity.Post;
 import com.bupt.weeat.model.entity.User;
+import com.bupt.weeat.utils.ImageLoaderUtil;
+import com.bupt.weeat.utils.ImageRequest;
 import com.bupt.weeat.utils.LogUtils;
-import com.bupt.weeat.view.customView.CircleTransformation;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -54,16 +55,13 @@ public class PostListAdapter extends RecyclerView.Adapter<PostListAdapter.ViewHo
                 String avatarUrl = user.getUserImage().getFileUrl(mContext);
                 LogUtils.i(TAG, avatarUrl);
                 if (avatarUrl != null) {
-                    //Glide.clear(holder.userAvatar);
-                    Picasso.with(mContext)
-                            .load(avatarUrl)
-                            .centerCrop()
-                            .resize(48, 48)
-                            .placeholder(R.drawable.tou_xiang)
-                            .transform(new CircleTransformation())
-                            .into(holder.userAvatar);
-
-
+                    ImageRequest request = new ImageRequest.Builder()
+                            .url(avatarUrl)
+                            .width(160)
+                            .height(120)
+                            .placeHolder(R.drawable.loading_placeholer)
+                            .imageView(holder.userAvatar).build();
+                    ImageLoaderUtil.getInstance().loadImage(mContext, request);
                 }
             }
         } catch (Exception e) {

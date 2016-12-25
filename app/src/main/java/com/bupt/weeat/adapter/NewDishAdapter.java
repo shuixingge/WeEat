@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import com.bupt.weeat.R;
 import com.bupt.weeat.model.entity.DishBean;
-import com.squareup.picasso.Picasso;
+import com.bupt.weeat.utils.ImageLoaderUtil;
+import com.bupt.weeat.utils.ImageRequest;
 
 import java.util.ArrayList;
 
@@ -42,13 +43,17 @@ public class NewDishAdapter extends RecyclerView.Adapter<NewDishAdapter.ViewHold
         holder.NewDishName.setText(list.get(position).getName());
         holder.NewDishPrice.setText(list.get(position).getPrice() + "元");
         holder.NewDishUpdateTime.setText(list.get(position).getUpdateTime());
-        String path=list.get(position).getDish_Cover().getPath();
-        if (path!= null) {
-            Picasso.with(context)
-                    .load(path)
-                    .resize(160, 120)
-                    .centerCrop()
-                    .into(holder.NewDishImage);
+        String path = list.get(position).getDish_Cover().getPath();
+        if (path != null) {
+            ImageRequest request = new ImageRequest.Builder()
+                    .url(path)
+                    .width(160)
+                    .height(120)
+                    .placeHolder(R.drawable.loading_placeholer)
+                    .imageView(holder.NewDishImage).build();
+
+            ImageLoaderUtil.getInstance().loadImage(context, request);
+
         }
     }
 
@@ -69,6 +74,7 @@ public class NewDishAdapter extends RecyclerView.Adapter<NewDishAdapter.ViewHold
         TextView NewDishUpdateTime;
         @Bind(R.id.new_dish_image)
         ImageView NewDishImage;
+
         public ViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, itemView);
